@@ -1,0 +1,29 @@
+.container {
+    margin-top: 85px;
+}
+
+.Mellomrom {
+    margin-top: 30px;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.container div {
+    margin-bottom: 15px;
+}
+
+.inline {
+    display: inline;
+}
+
+.feilmelding a {
+    color: red;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 10% 7%;
+    
+}

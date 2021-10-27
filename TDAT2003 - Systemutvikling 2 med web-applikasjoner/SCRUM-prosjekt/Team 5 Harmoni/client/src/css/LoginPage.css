@@ -1,0 +1,8 @@
+#LoginPageTitle{
+    color: white;
+}
+
+#LoginPageTitle:hover{
+    text-decoration: none;
+    color: white;
+}

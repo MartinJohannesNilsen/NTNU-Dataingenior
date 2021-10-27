@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login-form component Matches the snapshot 1`] = `
+<form>
+  <h1
+    id="login-title"
+  >
+    Innlogging
+  </h1>
+  <div
+    class="form-group"
+    id="email-input-container"
+  >
+    <label
+      for="email-input"
+    >
+      E-post
+    </label>
+    <input
+      class="form-control"
+      id="email-input"
+      name="email"
+      onChange={[Function]}
+      placeholder="Skriv inn e-post"
+      type="email"
+    />
+  </div>
+  <div
+    class="form-group"
+    id="password-input-container"
+  >
+    <label
+      for="password-input"
+    >
+      Passord
+    </label>
+    <input
+      class="form-control"
+      id="password-input"
+      name="pw"
+      onChange={[Function]}
+      placeholder="Skriv inn passord"
+      type="password"
+    />
+  </div>
+  <button
+    class="btn btn-primary"
+    id="login-button"
+    onClick={[Function]}
+    type="button"
+  >
+    Logg inn
+  </button>
+</form>
+`;

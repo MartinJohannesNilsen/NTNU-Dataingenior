@@ -1,0 +1,147 @@
+.Structure {
+    background-color: white;
+    position: flex;
+}
+
+.grid-struct-container{
+    width: 55%;
+    margin: auto auto;
+    background-color: white;
+}
+
+.grid-struct{
+    margin-top: 135px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "main-article main-article"
+    "article-1 article-2"
+    "getMoreArticlesButton getMoreArticlesButton";
+    grid-template-columns: 50% 50%;
+}
+
+.grid-struct a {
+    color: black;
+    text-align: center;
+}
+
+#main-article{
+    grid-area: main-article;
+}
+
+#Article{
+    text-align: left;
+    padding-bottom: 35px;
+    padding-right: 10px;
+}
+
+#article-img{
+    /*width: 100%;
+    height: 79%;*/
+    height: 250px;
+    width: 100%;
+}
+
+#article-title{
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+    color: white;
+}
+
+.Article:hover {
+    cursor: pointer;
+}
+
+.Article h3 {
+    margin-top: 5px;
+    font-size: 2vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainImg {
+    width: 100%;
+    max-height: 650px;
+}
+
+.MainArticle{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Article {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.MainArticle:hover {
+    cursor: pointer;
+}
+
+.MainArticle h3{
+    margin-top: 5px;
+    font-size: 2vw;
+}
+
+.MainArticle a {
+    color: black;
+}
+
+#getMoreArticlesButton{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -10px;   
+}
+
+
+@media only screen and (max-width: 640px) {
+    .grid-struct-container{
+        width: 95%;
+        margin-left: 1%;
+        margin-right: 4%;
+    }
+
+    .MainArticle {
+        margin-top: -15px;
+    }
+
+    .Article {
+        margin-top: -10px;
+    }
+
+    #article-text h3 {
+        font-size: 12px;
+    } 
+
+  }
+
+@media only screen and (max-width: 840px) {
+    #article-text h3 {
+        font-size: 15px;
+    }
+    
+    #article-img{
+        /*width: 100%;
+        height: 79%;*/
+        height: 130px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 840px) and (max-width: 1400px) {
+    
+    #article-img{
+        /*width: 100%;
+        height: 79%;*/
+        height: 180px;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,29 @@
+#EditProfileDiv{
+    padding: 30px 0 50px 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.changePassword {
+    margin: 1vw;
+}
+
+
+#EditProfileInput{
+    padding: 50px 0 0 0;
+    text-align: left;
+    margin: auto;
+}
+
+#EditProfileChangePasswordDiv{
+    padding: 25px 0 25px 0;
+}
+
+#EditProfileInput .col-sm-4{
+    margin: auto;
+}
+
+#EditProfileChangePasswordDiv .col-sm-4{
+    margin: auto;
+}
+

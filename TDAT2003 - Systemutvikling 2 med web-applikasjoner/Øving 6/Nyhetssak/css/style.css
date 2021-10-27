@@ -1,0 +1,196 @@
+
+.header {
+    grid-area: header;
+    
+}
+
+.header ul {
+    list-style-type: none;
+    padding: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.header li {
+    float: left;
+    font-size: 18px;
+}
+  
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+.header li a:hover {
+    background-color: olive;
+}
+
+.header li a:focus {
+    background-color: blue;
+} 
+
+.tittelBilde {
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.bilde p {
+    font-size: 12px;
+    font-family: Arial;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.bilde {
+    grid-area: bilde;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.overskrift {
+    text-align: center;
+    grid-area: overskrift;
+    font-size: 30px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+.ingress {
+    grid-area: ingress;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info {
+    grid-area: info;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+
+.avsnitt[title="Deloverskrift 1"] {
+    grid-area: avsnitt1;
+    background-color: #fff;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.avsnitt[title="Deloverskrift 1"] p {
+    padding-top: 5px;
+}
+
+.avsnitt[title="Deloverskrift 2"] {
+    grid-area: avsnitt2;
+    background-color: #fff;
+    padding-left: 5px;
+    padding-top: 30px;
+}
+
+.avsnitt[title="Deloverskrift 2"] p {
+    padding-top: 5px;
+}
+
+.faktaboks {
+    grid-area: faktaboks;
+    /*border: 3px solid blue;*/
+    padding-left: 60px;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.faktaboks li {
+    padding-left: 25px;
+}
+
+.faktaboks li span {
+    position: relative;
+    left: -25px;
+    
+}
+
+.faktaboks h2 {
+    /*text-align: center;*/
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.faktaboks h2 span{
+    /*text-align: center;*/
+    padding-left: -40px;
+}
+
+.meny h2 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+            "header header header header"
+            ". bilde bilde ."
+            ". overskrift overskrift ."
+            ". ingress ingress ."
+            ". info info ."
+            ". avsnitt1 faktaboks ."
+            ". avsnitt2 avsnitt2 .";
+    /*background-color: rgba(83, 177, 69, 0.413);*/
+    background-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+            "header header header header"
+            ". bilde bilde ."
+            ". overskrift overskrift ."
+            ". ingress ingress ."
+            ". info info ."
+            ". avsnitt1 avsnitt1 ."
+            ". faktaboks faktaboks ."
+            ". avsnitt2 avsnitt2 ."
+            ;
+    /*background-color: rgba(83, 177, 69, 0.413);*/
+    background-color: #fff;
+    }
+
+    .faktaboks {
+        grid-area: faktaboks;
+        /*border: 3px solid blue;*/
+        padding-left: 30px;
+        background-color: #fff;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .faktaboks h2 {
+        /*text-align: center;*/
+        padding-left: 0px;
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "typeRoots": ["src/@types", "node_modules/@types"]
+  },
+  "include": ["src"],
+  "typedocOptions": {
+    "entryPoints": ["src/index.tsx"],
+    "out": "./build_frontend/html",
+    "exclude": [
+      "**/node_modules/**",
+      "**/@types",
+      "**/setupTests.*",
+      "**/react-app-env.*",
+      "**/reportWebVitals.*",
+      "**/App.tsx",
+      "**/index.tsx",
+      "**/Routing.tsx"
+    ],
+    "theme": "default",
+    "name": "Frontend API Documentation"
+  }
+}

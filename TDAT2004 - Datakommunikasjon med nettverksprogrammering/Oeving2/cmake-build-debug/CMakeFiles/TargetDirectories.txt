@@ -1,0 +1,3 @@
+/Users/martinnilsen/OneDrive - NTNU/Fag/Dataingeniør 2. år/TDAT2004 Datakommunikasjon med nettverksprogrammering/Nettverksprogrammering/Øvinger/Oeving2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/martinnilsen/OneDrive - NTNU/Fag/Dataingeniør 2. år/TDAT2004 Datakommunikasjon med nettverksprogrammering/Nettverksprogrammering/Øvinger/Oeving2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/martinnilsen/OneDrive - NTNU/Fag/Dataingeniør 2. år/TDAT2004 Datakommunikasjon med nettverksprogrammering/Nettverksprogrammering/Øvinger/Oeving2/cmake-build-debug/CMakeFiles/Oeving2.dir

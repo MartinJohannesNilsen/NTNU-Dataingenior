@@ -1,0 +1,50 @@
+
+.ticker {
+  box-sizing: border-box;
+  display: flex;
+  white-space: nowrap;   
+  overflow-y: hidden;
+  width: 100%;
+  margin-top: 56px;
+  background-color: black;
+  /*scrollbar-width: none;*/
+  overflow: hidden;
+} 
+
+.ticker:hover{
+  overflow-x: scroll;
+}
+
+/*.ticker::-webkit-scrollbar {
+  display: none;
+}*/
+
+.title {
+  grid-area: title;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: -14px;
+  color: white;
+  font-size: 20px;
+}
+
+.livefeedElement:hover h1 {
+  color: rgb(186, 42, 42);
+}
+
+/*
+.title:hover {
+  text-decoration: underline;
+}
+*/
+
+.date{
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+
+

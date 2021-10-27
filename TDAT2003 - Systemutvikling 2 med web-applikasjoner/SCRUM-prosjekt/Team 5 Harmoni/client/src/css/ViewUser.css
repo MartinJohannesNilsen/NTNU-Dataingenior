@@ -1,0 +1,37 @@
+.col-sm-1,
+.col-sm-2{
+    word-break: break-word;
+}
+@media only screen and (min-width: 601px) {
+    #viewUsersMobileLegend {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    #ViewUserMain .col{
+        flex: none;
+        max-width: none;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "viewUsersMobileLegend p";
+    }
+    #ViewUserMain .col-sm-1{
+        flex: none;
+        max-width: none;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "viewUsersMobileLegend p";
+    }
+    #ViewUserMain .col-sm-2{
+        flex: none;
+        max-width: none;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "viewUsersMobileLegend p";
+    }
+    #viewUserEditButton{
+        grid-template-columns: 1fr !important;
+        margin-top: 0.5rem;
+    }
+
+}

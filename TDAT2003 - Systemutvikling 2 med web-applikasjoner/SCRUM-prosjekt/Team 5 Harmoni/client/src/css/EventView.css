@@ -1,0 +1,405 @@
+
+#eventViewTitle {
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(39, 64, 74);
+}
+
+#eventViewTitleHR{
+    width: 80%;
+    height: 2px;
+    background-color: rgb(39, 64, 74);
+}
+
+#eventViewInfoBoxCard{
+    /*box-shadow: 0 0 0 0 rgb(0, 0, 0), 5px 5px 10px 0 rgb(0, 0, 0);*/
+    box-shadow: 0 0 0;
+}
+#eventViewInfoBoxMap{
+
+}
+
+#eventViewButtons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+#eventViewButtons div{
+    margin: auto;
+}
+
+#eventViewButtons button{
+    width: 100px;
+    margin: 5px;
+}
+#eventViewTitle h1{
+    margin: auto auto auto;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+    margin: 25px 0 0 0;
+    padding-bottom: -30px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none
+    !important;
+    height:100%;
+    width:100%;
+    min-height: 300px;
+
+}
+
+.gmap_canvas iframe{
+    height:100%;
+    width:100%;
+    min-height: 300px;
+    min-width: 100px;
+    
+}
+
+#eventViewInfoTickets{
+    width: 80%;
+}
+
+#eventViewInfoDownloadButtons{
+    background-color: rgb(62, 107, 153);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#eventViewInfoDownloadButtons:hover{
+    background-color: rgb(38, 63, 138);
+}
+#eventViewInfoDownloadButtons:disabled{
+    cursor: default;
+    background-color: rgb(62, 107, 153);
+}
+
+/* ---------------------------------------- */
+
+
+
+#eventViewBackground{
+    min-height: 100%;
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+
+    display: grid;
+    grid-template-areas:
+            "eventViewImage eventViewInfoContainer"
+            "eventViewDescription eventViewInfoContainer"
+            "eventViewComment eventViewInfoContainer";
+    grid-template-columns: 2fr 1fr;
+}
+
+#eventViewImageContainer{
+    grid-area: eventViewImage;
+}
+
+#eventViewImage{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0px 15px 0px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    max-width: 98%;
+    text-align: center;
+}
+#eventViewImage img{
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+    /*object-fit: contain;*/
+    object-fit: cover;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#eventViewDescriptionContainer{
+    grid-area: eventViewDescription;
+}
+#eventViewDescription{
+    background-color: white;
+    margin: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 98%;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    border-radius: 5px;
+    min-height: 470px;
+    max-height: 95;
+    height: 98%;
+    overflow-y: auto;
+}
+#eventViewDescriptionBox{
+    width: 70%;
+    margin: auto;
+}
+#eventViewDescriptionBoxTitle{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#eventViewDescriptionBox h6{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#eventViewInfoBoxContainer{
+    grid-area: eventViewInfoContainer;
+    margin: 0px 0 0 15px;
+    max-width: 98%;
+}
+#eventViewInfoBox{
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    max-width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 0 15px 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#eventViewArtistsContainer{
+}
+#eventViewArtists{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    max-width: 100%;
+    border-radius: 5px;
+    min-height: 100px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 0 0 15px 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+#eventViewFiles div{
+    margin: 10px;
+}
+
+#eventViewContactInfoContainer{
+}
+#eventViewContactInfo{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    max-width: 100%;
+    border-radius: 5px;
+    min-height: 100px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 0 0 15px 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+#eventViewContactInfo h3{
+    padding-bottom: 5px;
+}
+#eventViewContactInfo p{
+    margin-bottom: 8px;
+}
+#eventViewFiles div{
+    margin: 10px;
+}
+
+#eventViewFilesContainer{
+}
+#eventViewFiles{
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    max-width: 100%;
+    border-radius: 5px;
+    min-height: 100px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 0 0 15px 0;
+}
+#eventViewFiles div{
+    margin: 10px;
+}
+
+#eventViewInfoTicketsContainer{
+}
+#eventViewInfoTickets{
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    max-width: 100%;
+    border-radius: 5px;
+    min-height: 100px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 0 0 15px 0;
+}
+
+
+
+#eventViewInfoTicketsAndFilesContainer{
+    grid-area: eventViewTicketsAndFiles;
+    padding-right: 15px;
+}
+
+#eventViewCommentSectionContainer{
+    grid-area: eventViewComment;
+}
+#eventViewCommentSection{
+    background-color: white;
+    width: 100%;
+    margin: 0 15px 15px 15px;
+    padding: 40px;
+    max-width: 98%;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 1px 1px 5px 0 rgb(0, 0, 0);
+    border-radius: 5px;
+    min-height: 470px;
+    max-height: 95;
+    height: 98%;
+    overflow-y: auto;
+    
+}
+#eventViewCommentSection p{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#eventViewTitleEvent{
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas:
+            "eventViewStatus eventViewTitle eventViewDropdown";
+    grid-template-columns: auto;
+}
+
+#eventViewStatus{
+    padding-left: 20px;
+    grid-area: eventViewStatus;
+}
+
+#eventViewStatus :hover{
+    cursor: default;
+}
+
+#eventViewTitle{
+    grid-area: eventViewTitle;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#eventViewDropdown{
+    grid-area: eventViewDropdown;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.eventViewParagraphs{
+    margin-bottom: 15px;
+}
+
+#eventViewCommentSectionComments{
+    margin-left: -30px;
+}
+
+@Media only screen and (max-width: 840px){
+    #eventViewBackground{
+        padding: 0px;
+        grid-template-areas:
+                "eventViewImage"
+                "eventViewDescription"
+                "eventViewInfoContainer"
+                "eventViewComment";
+        grid-template-columns: 1fr;
+    }
+
+    #eventViewDescriptionBox{
+        width: 90%;
+        margin: auto;
+    }
+    #eventViewTitleEvent{
+        padding-top: 20px;
+        display: grid;
+        grid-template-areas:
+                "eventViewStatus eventViewDropdown"
+                "eventViewTitle eventViewTitle";
+        grid-template-columns: 1fr 1fr;
+        grid-area: title;
+    }
+    #eventViewImage{
+        margin: 0px auto 5px auto;
+        max-width: 95%;
+    }
+    #eventViewDescription{
+        max-width: 95%;
+        margin: 10px auto 5px auto;
+        text-align: center;
+    }
+    #eventViewDescriptionBoxTitle{
+        text-align: center;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+    #eventViewDescriptionBoxTitle h1{
+        font-size: 30px;
+    }
+    #eventViewInfoBoxContainer{
+        grid-area: eventViewInfoContainer;
+        margin: 0px 0 0 15px; 
+        max-width: 95%;
+        min-width: 95%;
+        margin: 10px auto 0px auto;
+    }
+
+    #eventViewCommentSection{
+        max-width: 95%;
+        margin: 0px auto 15px auto;
+    }
+    #eventViewTitle{
+        grid-area: eventViewTitle;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+}
+
+@Media only screen and (max-width: 600px){
+    #eventViewCommentSectionUserInfo{
+        display:grid;
+    }
+}
+
+
+

@@ -1,0 +1,78 @@
+.container {
+    margin-top: 135px;
+    background-color: white;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+
+#endreSakContainer div {
+    margin-bottom: 15px;
+}
+
+#endreSakContainer {
+    width: 80%;
+    margin: 140px auto;
+}
+
+.container div {
+    margin-bottom: 15px;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.feilmelding a {
+    color: red;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 10% 7%;   
+}
+
+body {
+    height: 100%;
+}
+
+#deleteArticleIconInArticleStructure:hover {
+    cursor: pointer;
+}
+
+#editArticleIconInArticleStructure{
+    margin-right: 3px;
+}
+
+#søkefeltEndreOgSlettSak {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+#søkefeltEndreOgSlettSak input {
+    padding-right: 10px;
+}
+
+#previewBottomBorder {
+    border-bottom: 2px solid black;
+}
+
+#forhåndsvisningEndreSak {
+    margin-top: -120px;
+}
+
+
+
+.oversikt {
+    height: 65vh;
+    overflow-x: auto;
+}
+
+@Media only screen and (max-height: 700px){
+    .oversikt {
+        height: 50vh;
+    }
+} 

@@ -1,0 +1,32 @@
+#AboutMain{
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+    width: 80%
+}
+
+#aboutText{
+    padding-top: 25px;
+}
+
+#links{
+    padding-top: 10%;
+}
+
+#link{
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+#aboutEventViewMap{
+    margin: auto;
+    width:80%;
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    #AboutMain{
+        padding: 0
+    }
+}

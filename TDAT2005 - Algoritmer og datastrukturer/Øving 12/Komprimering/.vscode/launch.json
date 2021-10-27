@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - huffmanKomprimering",
+            "request": "launch",
+            "mainClass": "huffmanKomprimering",
+            "projectName": "Komprimering_1176e66b"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+#MainPageDiv{
+    margin: auto;
+    text-align: center;
+    padding-top: 180px;
+    background-image: url('../img/Backgrounds/Background 1.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+    z-index: 2000;
+    max-width: 100%;
+}
+
+#MainPageTitle {
+    color: white;
+    font-family: Georgia;
+    font-size: 80px;
+    padding-bottom: 35px;
+
+}
+
+#MainPageText {
+    width: 40%;
+    margin: auto;
+}
+
+#MainPageText {
+    color: rgb(218, 216, 216);
+}
+
+#MainPageButtonDiv{
+    padding: 35px 0 20px 0;
+}
+
+#MainPageButtons{
+    padding: 10px 0 10px 0;
+}
+
+#MainPageButtons button{
+    width: 220px;
+}
+
+#MainPageDivWithoutFooter{
+    min-height: 90vh;
+}
+
+@Media only screen and (max-width: 840px){
+    #MainPageDiv{
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+        background-image: url('../img/Backgrounds/Background 1.jpeg');
+        background-size: cover;
+        min-height: 100vh;
+    }
+    #MainPageTitle {
+        font-size: 40px;
+        padding-bottom: 35px;
+    }
+
+
+    #MainPageText {
+        width: 80%;
+        margin: auto;
+    }
+}
+

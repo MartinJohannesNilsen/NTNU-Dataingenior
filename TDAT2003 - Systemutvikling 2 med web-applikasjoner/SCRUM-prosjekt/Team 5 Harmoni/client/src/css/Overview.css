@@ -1,0 +1,117 @@
+
+.overview{
+    width: 18rem;
+    text-align: center;
+}
+
+#overviewPageCardContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.card-title{
+    font-size: 22px;
+}
+
+#logoutBtn{
+    display: block;
+    margin: 50px auto 200px auto;
+    width: 200px;
+
+}
+
+#jumbotronTitle{
+    font-size: 78px;
+    color: whitesmoke;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.jumbotron{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://wp3921-flywheel.netdna-ssl.com/wp-content/uploads/2019/03/electricaura_contact-festival201805x.jpg");
+    background-size: cover;
+    background-position-y: 500px;
+}
+.titleContainer{
+    vertical-align: middle;
+}
+
+
+#OverviewDiv{
+    margin: auto;
+    text-align: center;
+
+    min-height: 93vh;
+}
+
+#OverviewTitle {
+    padding-bottom: 35px;
+}
+
+#overviewPageCardBtn{
+    margin-top: 25px;
+}
+
+#OverviewButtonDiv{
+    padding: 35px 0 0 0;
+}
+
+#OverviewButtons{
+    padding: 10px 0 10px 0;
+}
+
+#OverviewButtons button{
+    width: 300px;
+}
+
+#OverviewButtonsLogOut{
+    padding: 10px 0 10px 0;
+}
+
+#OverviewButtonsLogOut button{
+    width: 100px;
+}
+
+#overviewPageCardContainer{
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+    #overviewPageCardContainer{
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        grid-template-areas: "overviewPageCardTitle"
+                             "overviewPageCardText"
+                             "overviewPageCardBtn";
+        margin: auto;
+    }
+
+    #overviewPageCardContent{
+        margin-bottom: 25px;
+    }
+
+    #overviewPageCardText{
+        padding-bottom: 3px;
+    }
+
+    #overviewPageCardContent .card-body{
+        text-align: center;
+        padding: 10px 0 10px 0;
+        margin: 0 auto 0 auto;
+        width: 90%;
+    }
+
+    #logoutBtn{
+        margin: 20px auto 30px auto;
+    }
+}

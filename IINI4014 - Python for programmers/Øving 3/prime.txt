@@ -1,0 +1,4 @@
+Have to check if divisible by anything other than itself and 1
+iterate up to its square root for efficiency, instead of up to the number itself
+check modulo == 0
+put it all in a while for checking until len(list) == 1000 for the first 1000 prime numbers

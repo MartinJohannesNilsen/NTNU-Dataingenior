@@ -1,0 +1,4 @@
+docker ps | lister opp containers
+docker rmi -f <image id/navn> | fjerner docker image
+docker build -t cppkompilator . | bygger docker image
+docker run -p 49160:8080 -d cppkompilator | kjører serveren i docker, samtidig som at den mapper port 8080 i containeren til 49160 på maskinen du kjører på

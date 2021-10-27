@@ -1,0 +1,27 @@
+.grid-struct-container{
+    width: 55%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.grid-struct{
+    margin-top: 45px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "main-article main-article"
+    "article-1 article-2";
+}
+
+.grid-struct a {
+    color: black;
+    text-align: center;
+}
+
+#main-article{
+    grid-area: main-article;
+}
+

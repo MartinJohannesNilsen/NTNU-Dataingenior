@@ -1,0 +1,14 @@
+#toTopButton {
+    position: fixed;
+    z-index: 2000;
+    right: 20px;
+    bottom: 20px;
+    margin-right: 10px;
+    transform: rotate(-90deg);
+}
+
+@Media only screen and (max-width: 840px){ /*Skal ikke være vist på telefon*/
+    #toTopButton {
+        display: none;
+    }
+}

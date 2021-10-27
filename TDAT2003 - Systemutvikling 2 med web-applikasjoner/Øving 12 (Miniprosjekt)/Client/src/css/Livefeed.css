@@ -1,0 +1,140 @@
+#hovedmeny{
+  position: fixed;
+  top: 0;
+  margin-top: 55px;
+  width: 100%;
+  z-index: 1;
+}
+
+.livefeed {
+  display: grid;
+  width: 100%;
+  grid-template-areas: 
+  "sisteIkon ticker";
+}
+
+.sisteIkon {
+  grid-area: sisteIkon;
+  width: 10%;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: rgb(223, 218, 218);
+  height: 50px;
+  text-align: center;
+  z-index: 3;
+}
+
+.sisteIkon:hover {
+  cursor: default;
+}
+
+.sisteIkon h3 { 
+  size: 1.8vw;
+  margin-top: 7px;
+  color:  rgb(128, 37, 37);
+}
+
+.ticker {
+  grid-area: ticker;
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  white-space: nowrap;   
+  overflow-y: hidden; 
+  background-color: rgb(128, 37, 37);
+  z-index: 0;
+} 
+
+.tickerScroll {
+  /* Apply animation to this element */	
+  -moz-animation: ticker 60s linear infinite;
+  -webkit-animation: ticker 60s linear infinite;
+  animation: ticker 60s linear infinite;
+}
+
+.tickerbox {
+  grid-area: ticker;
+  /*box-sizing: border-box;*/
+  width: 100%;
+  height: 50px;
+  display: flex;
+  white-space: nowrap;   
+  overflow-y: hidden; 
+  background-color: rgb(128, 37, 37);
+  overflow: hidden;
+}
+
+/*
+.ticker:hover{
+  overflow-x: scroll;
+  height: 60px;
+}
+
+*/
+
+/*.ticker::-webkit-scrollbar {
+  display: none;
+}*/
+
+.livefeedTitle{
+  grid-area: title;
+  padding: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.livefeedElement:hover div {
+  color: rgb(208, 208, 208);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+.title:hover {
+  text-decoration: underline;
+}
+*/
+
+.date{
+  font-size: 10px;
+  color: white;
+  margin-left: 8px;
+  margin-top: -2px;
+  margin-bottom: 5px;
+}
+
+@keyframes ticker {
+    0%   { 
+      -webkit-transform: translate(0, 100%); 
+    }
+    2%   { 
+      -webkit-transform: translate(0, 0); 	
+    }
+    4%   { 
+      -webkit-transform: translate(0, 0);
+    }
+    100% { 
+      -webkit-transform: translate(-100%, 0); 
+    }
+  }
+
+
+@media only screen and (max-width: 840px) {
+  .tickerbox {
+    width: 100%;
+  } 
+
+  .sisteIkon {
+    width: 0%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .sisteIkon h3 {
+    font-size: 0px;
+  }
+
+}

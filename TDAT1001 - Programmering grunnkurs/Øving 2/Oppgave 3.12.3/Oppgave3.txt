@@ -1,0 +1,24 @@
+
+Her må du ha to alternativer
+
+Hvis skuddår skal det være delelig med 4 eller delelig med 100 (skuddår) uten å gi rest. Bruk int for heltall. Hvis dette stemmer skal programmet fortelle at det er et skuddår.
+
+Hvis det ikke er delelig med enten 4 eller 100 skal den si at året ikke er skuddår
+
+
+
+diagram:
+
+- Lese inn et årstall
+
+- Gjøre string-variabel om til heltall
+
+- Lage int
+
+- Sjekke om tallet ikke er 0 eller mindre
+
+- if/else 
+
+
+
+Oppgave3.java var komplisert satt opp - lagde derfor en bedre versjon 2

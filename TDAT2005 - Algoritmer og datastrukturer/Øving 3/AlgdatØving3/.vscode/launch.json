@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Oeving3",
+            "request": "launch",
+            "mainClass": "Oeving3",
+            "projectName": "AlgdatØving3_7f1cec83"
+        }
+    ]
+}

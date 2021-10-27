@@ -1,0 +1,15 @@
+#hovedmeny{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-item dropdown{
+    margin-left: auto;
+}
+
+.nav-item dropdown hover{
+    background-color: mediumseagreen;
+}
+

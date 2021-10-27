@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/martinnilsen/OneDrive - NTNU/Fag/Dataingeniør 2. år/TDAT2004 Datakommunikasjon med nettverksprogrammering/Nettverksprogrammering/Øvinger/Oeving2/Workers.cpp
+iostream
+-
+thread
+-
+list
+-
+vector
+-
+
+/Users/martinnilsen/OneDrive - NTNU/Fag/Dataingeniør 2. år/TDAT2004 Datakommunikasjon med nettverksprogrammering/Nettverksprogrammering/Øvinger/Oeving2/main.cpp
+Workers.cpp
+/Users/martinnilsen/OneDrive - NTNU/Fag/Dataingeniør 2. år/TDAT2004 Datakommunikasjon med nettverksprogrammering/Nettverksprogrammering/Øvinger/Oeving2/Workers.cpp
+

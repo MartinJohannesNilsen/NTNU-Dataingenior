@@ -1,0 +1,9 @@
+**/node_modules
+**/coverage
+.idea
+client/.env
+server/.env
+client/docs
+server/docs
+client/build
+arkit.svg

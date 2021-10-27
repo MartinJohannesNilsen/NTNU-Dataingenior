@@ -1,0 +1,14 @@
+*.iml
+.iml
+.class
+*.class
+.idea
+./.idea
+/.idea
+.xml
+*.xml
+*.log
+./out/logs
+./out/logs/*
+./out/*
+./out/

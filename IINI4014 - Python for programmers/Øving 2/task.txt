@@ -1,0 +1,7 @@
+The task it to calculate PI using Archimedes method
+They also wanted us to check out iter, iterator and iterable
+
+remember to define functions
+
+def archimedes():
+    #Calculate PI

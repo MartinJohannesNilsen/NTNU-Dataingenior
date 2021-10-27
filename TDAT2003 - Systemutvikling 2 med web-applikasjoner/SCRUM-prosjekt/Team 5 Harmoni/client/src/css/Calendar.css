@@ -1,0 +1,78 @@
+#CalendarShowDiv{
+    min-height: 100vh;
+    margin: auto;
+    width: 80%;
+    padding: 50px 0 10px 0;
+}
+
+#fullCalendar .fc-event-container a{
+    width: 100%;
+}
+
+#fullCalendar .fc-event-container span{
+    width: 100%;
+}
+
+#fullCalendar .fc-title{
+}
+td.fc-event-container div{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+    #CalendarShowDiv{
+        width: 95%;
+    }
+
+    #CalendarShowDiv .fc-scroller{
+        height: 80% !important;
+    }
+
+}
+@media only screen and (max-width: 430px){
+    #react-confirm-alert .react-confirm-alert{
+        max-width: 99vw;
+    }
+
+
+    #react-confirm-alert .react-confirm-alert-body h1{
+        font-size: x-large;
+        width: 70%;
+        margin: auto;
+
+    }
+
+    #react-confirm-alert .react-confirm-alert-body{
+        font-size: x-large;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #react-confirm-alert .react-confirm-alert-button-group{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #react-confirm-alert .react-confirm-alert-button-group button{
+        margin: 0 0 10px 0;
+        border: none;
+    }
+
+
+    #react-confirm-alert .react-confirm-alert-overlay{
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    #CalendarShowDiv > div > div.fc-toolbar.fc-header-toolbar > div.fc-left > button{
+        margin-top: 10px;
+    }
+}

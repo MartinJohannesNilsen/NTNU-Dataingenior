@@ -1,0 +1,27 @@
+[submodule "external/gsl"]
+	path = external/gsl
+	url = https://github.com/Microsoft/GSL.git
+[submodule "external/expected-lite"]
+	path = external/expected-lite
+	url = https://github.com/martinmoene/expected-lite.git
+[submodule "external/spdlog"]
+	path = external/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "external/googletest"]
+	path = external/googletest
+	url = https://github.com/google/googletest.git
+[submodule "external/asio"]
+	path = external/asio
+	url = https://github.com/chriskohlhoff/asio.git
+[submodule "external/cereal"]
+	path = external/cereal
+	url = https://github.com/USCiLab/cereal.git
+[submodule "external/libzmq"]
+	path = external/libzmq
+	url = https://github.com/zeromq/libzmq.git
+[submodule "external/cppzmq"]
+	path = external/cppzmq
+	url = https://github.com/zeromq/cppzmq.git
+[submodule "external/pybind11"]
+	path = external/pybind11
+	url = https://github.com/pybind/pybind11.git

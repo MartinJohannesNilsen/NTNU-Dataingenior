@@ -1,0 +1,13 @@
+Her har jeg lagt de komponentene jeg vil ha en backup av for å kunne endre komponentene:
+
+06.10 16:00
+- Vil endre redirect slik at en får opp en komponent med de ulike sakene, og så kan man trykke på en av sakene og slette den
+- Vil ha det samme på både endre og slett.
+
+22.10 14:45
+- Må fikse Navbar Collapse, så deprecater nåværende navbar
+
+01.11 13:30
+- Navbar Collapse med Reactstrap krasjer med chrome og mobilvisning, ettersom jeg bruker fixed livefeed og header, 
+så velger å deprecate denne og lage en egen komponent som flyttes inn og ut av skjermen. Skal funke på både safari og chrome, og fungere på mobil
+

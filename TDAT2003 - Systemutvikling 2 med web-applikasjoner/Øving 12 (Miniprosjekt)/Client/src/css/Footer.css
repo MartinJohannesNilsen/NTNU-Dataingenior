@@ -1,0 +1,38 @@
+
+.Footer{
+    background-color: rgb(50, 55, 61);
+    Margin-top: 50px;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.firstBox {
+    margin: 10px;
+}
+
+.firstBox p{
+    color: white;
+    margin-bottom: 0px;
+}
+
+.firstBox h5 {
+    color: white;
+}
+
+.firstBox a {
+    
+}
+
+.secondBox a {
+
+}
+
+.secondBox {
+    background-color: rgb(23, 132, 240);
+}
+
+@media only screen and (max-width: 640px){
+    
+}
+

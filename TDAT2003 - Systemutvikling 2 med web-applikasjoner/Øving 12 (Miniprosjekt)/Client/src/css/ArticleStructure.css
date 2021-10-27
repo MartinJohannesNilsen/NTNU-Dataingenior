@@ -1,0 +1,198 @@
+.articleComponent {
+    margin-top: 20px;
+    position: center;
+}
+
+.header {
+    grid-area: header;
+    
+}
+
+.header ul {
+    list-style-type: none;
+    padding: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.header li {
+    float: left;
+    font-size: 18px;
+}
+  
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+.header li a:hover {
+    background-color: olive;
+}
+
+.header li a:focus {
+    background-color: blue;
+} 
+
+.tittelBilde {
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.bilde p {
+    font-size: 12px;
+    font-family: Arial;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.bilde {
+    grid-area: bilde;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.overskrift {
+    border-bottom: 3px solid black;
+    text-align: center;
+    grid-area: overskrift;
+    font-size: 30px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+.ingress {
+    grid-area: ingress;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info {
+    border-bottom: 3px solid black;
+    grid-area: info;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+.kommentarDiv {
+    margin-top: 50px;
+}
+
+
+.avsnitt {
+    grid-area: avsnitt;
+    margin-top: 20px;
+    background-color: #fff;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.background {
+    background-color: white;
+}
+
+.meny h2 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.editIcon {
+    margin-top: -15px;
+    position: absolute;
+    right: 15px;
+}
+
+.avsnittsOppdeling {
+    margin-bottom: 20px;
+}
+
+.grid-container-article {
+    margin-top: 135px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:    
+            ". bilde bilde ."
+            ". overskrift overskrift ."
+            ". info info ."
+            ". avsnitt avsnitt .";
+}
+
+.panel-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.panel-warning {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.kommentarfelt {
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:    
+            ". kommentarfelt kommentarfelt .";
+}
+
+.kommentarfeltKomponent {
+    grid-area: kommentarfelt;
+}
+
+.kommentarfelt a {
+    margin-bottom: 150px;
+}
+
+#kommentarer {
+    max-height: 300px;
+    overflow: auto;
+}
+
+@Media only screen and (max-height: 800px){
+    #kommentarer {
+        max-height: 200px;
+    }
+}
+
+@Media only screen and (max-width: 840px){
+    .kommentarfelt {
+        grid-template-areas: 
+        "kommentarfelt kommentarfelt kommentarfelt kommentarfelt";
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-top: 30px;
+    }
+
+    .grid-container-article {
+        grid-template-areas: 
+            "bilde bilde bilde bilde"
+            "overskrift overskrift overskrift overskrift"
+            "info info info info"
+            "avsnitt avsnitt avsnitt avsnitt";
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .bilde {
+        padding-top: 20px;
+    }
+}
+
+
+
+      

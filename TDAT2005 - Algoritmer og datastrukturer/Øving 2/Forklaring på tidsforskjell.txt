@@ -1,0 +1,1 @@
+Forskjellen på tidsbruk på metode en (variabel1()) og metode 2 (variabel2) kommer av at n blir halvvert i metode 2 for hver rekursjon. Dette medfører at det vil kreve veldig mange færre rekursjoner, og jo større startverdien til n er, jo større forskjell vil dette medføre.

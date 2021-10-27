@@ -1,0 +1,27 @@
+{
+  "name": "react-static-pages",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "node ./scripts/enable_babelrc.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
+    "react-simplified": "^1.6.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

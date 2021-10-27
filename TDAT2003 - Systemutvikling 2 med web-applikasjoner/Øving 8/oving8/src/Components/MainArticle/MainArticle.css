@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainImg {
+    width: 100%;
+}
+
+.MainArticle{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.MainArticle h3{
+    font-size: 40px;
+}
+
+.MainArticle a {
+    color: black;
+}
+

@@ -1,0 +1,46 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.18.3",
+    "bufferutil": "^4.0.1",
+    "crypto": "^1.0.1",
+    "debug": "^4.1.1",
+    "dotenv": "latest",
+    "express": "^4.16.3",
+    "multer": "^1.4.2",
+    "mysql": "^2.16.0",
+    "node-gyp": "^6.1.0",
+    "node-pre-gyp": "^0.14.0",
+    "nodemailer": "^6.4.2",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "serve-index": "^1.9.1",
+    "utf-8-validate": "^5.0.2",
+    "uuid": "^3.3.3"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "globalSetup": "./src/tests/setup.js",
+    "globalTeardown": "./src/tests/teardown.js"
+  },
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "test": "jest",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.4",
+    "reload": "^3.0.2"
+  }
+}

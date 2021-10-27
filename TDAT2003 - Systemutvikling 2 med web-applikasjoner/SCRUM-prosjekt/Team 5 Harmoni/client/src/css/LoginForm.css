@@ -1,0 +1,78 @@
+#LoginFormDiv{
+        margin: auto;
+        text-align: center;
+        padding-top: 80px;
+        background-image: url('../img/Backgrounds/Background 1.jpeg');
+        background-size: cover;
+        z-index: 2000;
+        max-width: 100%;
+}
+#LoginFormWithoutFooter{
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+#LoginFormForm{
+    margin: auto;
+    width: 50%;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 5px 5px 10px 0 rgb(0, 0, 0);
+}
+#loginFormForgotPW a{
+    text-decoration: none;
+    color: black;
+}
+#loginFormForgotPW{
+    margin-top: 10px;
+}
+
+.LoginFormCard{
+    /*background-image: url('../img/Backgrounds/Background 2.png');*/
+    background-color: white;
+    padding: 20px;
+}
+
+.LoginFormCard button{
+    margin-top: 20px;
+}
+
+.LoginFormCard label {
+    color: black;
+}
+
+#login-title{
+    margin-bottom: 30px;
+    color: black;
+}
+
+.login-button{
+    width: 30%
+}
+
+#LoginFormButtons button{
+    margin: 10px;
+}
+
+@Media only screen and (max-width: 780px){
+    #LoginFormForm{
+        margin: auto;
+        width: 94%;
+        box-shadow: 0 0 0 0 rgb(0, 0, 0), 5px 5px 10px 0 rgb(0, 0, 0);
+    }
+    #LoginFormButtons{
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    #LoginFormButtons button{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+    .login-button{
+        width: 95%;
+        margin: 10px;
+    }
+
+}

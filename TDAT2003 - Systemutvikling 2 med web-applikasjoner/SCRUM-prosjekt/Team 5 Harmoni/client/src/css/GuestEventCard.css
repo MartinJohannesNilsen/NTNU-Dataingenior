@@ -1,0 +1,76 @@
+.guestEventCard{
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.guestEventCard:hover{
+    cursor: pointer;
+}
+
+.guestEventCardBody{
+    background-color: ghostwhite;
+}
+
+.guestCardOverlay{
+    border-radius: 10px;
+    margin: 200px 0 5px 5px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    color: white;
+    display: inline-block;
+    width: fit-content;
+    overflow-y: auto;
+    min-width: 25%;
+    max-width: 60%;
+}
+.guestCardOverlay::-webkit-scrollbar {
+    display: none;
+}
+
+.guestCardImage{
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    box-shadow: 6px 6px 8px -2px rgba(0,0,0,0.46);
+}
+
+.eventName{
+    font-family: Helvetica, serif;
+    font-size: 20px;
+}
+
+.carousel-item img{
+    height: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+    .guestCardImage{
+        box-shadow: none;
+    }
+
+    .guestEventCard{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 400px){
+    #guestEventCardCard{
+        object-fit: contain;
+    }
+
+    .guestCardOverlay{
+        word-break: break-word;
+        min-width: 150px;
+        max-width: 280px;
+        margin-top: 190px;
+        object-fit: contain;
+    }
+}
+
+
+
+

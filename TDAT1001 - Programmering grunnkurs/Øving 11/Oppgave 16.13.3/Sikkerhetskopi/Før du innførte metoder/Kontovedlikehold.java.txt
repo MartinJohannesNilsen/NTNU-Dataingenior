@@ -1,0 +1,55 @@
+import java.io.*;
+import java.util.*;
+import static javax.swing.JOptionPane.*;
+class Kontovedlikehold{
+	public static void main(String[] Args) throws IOException{
+		String filnavnSaldo = "saldo.txt";
+		String filnavnTransaksjoner = "transaksjoner.txt";
+			//Leser saldo
+			FileReader forbindelseTilFil = new FileReader(filnavnSaldo);
+			BufferedReader leser = new BufferedReader(forbindelseTilFil);
+			String saldoLest = leser.readLine();
+			double startSaldo = Double.parseDouble(saldoLest);
+			Scanner scan = new Scanner(leser);
+  		 	scan.close();
+  		 	leser.close();
+		
+		 
+			
+			//utfører transaksjoner
+			TransaksjonsOperasjoner saldoen = new TransaksjonsOperasjoner(startSaldo);
+			
+			//utfører innskudd
+			FileWriter skriveTransaksjonTilFil = new FileWriter(filnavnTransaksjoner, true);
+			PrintWriter skriver = new PrintWriter(new BufferedWriter(skriveTransaksjonTilFil));
+			skriver.println(saldoen.utførInnskudd(200));
+			skriver.close();
+			
+			//utfører uttak
+			FileWriter skriveTransaksjon1TilFil = new FileWriter(filnavnTransaksjoner, true);
+			PrintWriter skriver1 = new PrintWriter(new BufferedWriter(skriveTransaksjon1TilFil));
+			skriver1.println(saldoen.utførUttak(400));
+			skriver1.close();
+		
+			//Skriver saldo
+			FileWriter skriveSaldoTilFil = new FileWriter(filnavnSaldo, false);
+			PrintWriter skriver2 = new PrintWriter(new BufferedWriter(skriveSaldoTilFil));
+			skriver2.println(saldoen.getSaldo());
+			skriver2.close();
+	}
+}
+
+/*
+}catch(FileNotFoundException e){
+	System.out.println("Fil ikke funnet: " + filnavn);
+
+}catch(IOException e){
+	System.out.println("IO-Feil ved åpning/lukking av fil: " + filnavn);
+		}catch (InputMismatchException e) {
+			System.out.println("Feil ved omforming til tall");
+		 }
+
+
+
+
+*/

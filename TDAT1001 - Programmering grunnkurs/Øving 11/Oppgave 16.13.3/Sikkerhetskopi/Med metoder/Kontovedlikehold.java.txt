@@ -1,0 +1,112 @@
+import java.io.*;
+import java.util.*;
+import static javax.swing.JOptionPane.*;
+class Kontovedlikehold {
+	private static String filnavnSaldo = "saldo.txt";
+	private static String filnavnTransaksjoner = "transaksjoner.txt";
+	private static TransaksjonsOperasjoner saldoen;
+	private static FileWriter skrive;
+	private static PrintWriter skriver;
+	private static double startSaldo;
+	
+	
+	public Kontovedlikehold() throws IOException{
+		try{	
+			FileReader forbindelseTilFil = new FileReader(filnavnSaldo);
+			BufferedReader leser = new BufferedReader(forbindelseTilFil);
+			String saldoLest = leser.readLine();
+			startSaldo = Double.parseDouble(saldoLest);
+			this.saldoen = new TransaksjonsOperasjoner(startSaldo);
+			Scanner scan = new Scanner(leser);
+		 	scan.close();
+		 	leser.close();
+		}catch(FileNotFoundException e){
+			System.out.println("Fil ikke funnet: " + filnavnSaldo);
+		}catch(NullPointerException e){
+			System.out.println("Saldo.txt er tom, sett saldo");
+		}catch (NumberFormatException e) {
+			System.out.println("Saldo.txt: Feil ved omforming til tall");
+		 }
+	}
+	
+	public void skrivInnskudd(double innskudd) throws IOException{
+		try{
+			skrive = new FileWriter(filnavnTransaksjoner, true);
+			skriver = new PrintWriter(new BufferedWriter(skrive));
+			skriver.println(saldoen.utførInnskudd(innskudd));
+			skriver.close();
+		}catch(FileNotFoundException e){
+			System.out.println("Fil ikke funnet: " + filnavnTransaksjoner);
+		 }
+	}
+		
+	public void skrivUttak(double uttak) throws IOException{
+		try{
+			skrive = new FileWriter(filnavnTransaksjoner, true);
+			skriver = new PrintWriter(new BufferedWriter(skrive));
+			skriver.println(saldoen.utførUttak(uttak));
+			skriver.close();
+		}catch(FileNotFoundException e){
+			System.out.println("Fil ikke funnet: " + filnavnTransaksjoner);
+	 	 }
+	}
+	
+	public void skrivSaldo() throws IOException{
+		if(saldoen.getSaldo()>0){
+			skrive = new FileWriter(filnavnSaldo, false);
+			skriver = new PrintWriter(new BufferedWriter(skrive));
+			skriver.println(saldoen.getSaldo());
+			skriver.close();
+		}
+	}
+	
+	public static void main(String[] Args) throws IOException{
+		Kontovedlikehold saldo = new Kontovedlikehold();
+		while(true){
+			String[] muligheter = {"Innskudd", "Uttak", "Avslutt"};
+			int valg = showOptionDialog(null, "Hva vil du gjøre?", "Bank", 0, PLAIN_MESSAGE, null, muligheter, muligheter[2]);
+			switch(valg){
+				case 0:
+					String innskuddstall = showInputDialog(null, "Hva vil du sette inn?");
+					Double innskudd = Double.parseDouble(innskuddstall);
+					saldo.skrivInnskudd(innskudd);
+					break;
+				case 1:
+					String uttakstall = showInputDialog(null, "Hva vil du ta ut?");
+					Double uttak = Double.parseDouble(uttakstall);
+					saldo.skrivUttak(uttak);
+					break;
+				case 2:
+					if(saldoen.getSaldo()<0){
+						skrive = new FileWriter(filnavnTransaksjoner, false);
+						skriver = new PrintWriter(new BufferedWriter(skrive));
+						skriver.println("");
+						skriver.close();
+						
+						throw new IllegalArgumentException("Du kan ikke overdra bankkontoen!");
+						//showMessageDialog(null, "Du kan ikke overdra kontoen");
+					}else {
+						saldo.skrivSaldo();
+					 }
+					System.exit(0);
+				default:
+					return;
+			}
+		}
+	}
+}
+
+/*
+}catch(FileNotFoundException e){
+	System.out.println("Fil ikke funnet: " + filnavn);
+
+}catch(IOException e){
+	System.out.println("IO-Feil ved åpning/lukking av fil: " + filnavn);
+		}catch (InputMismatchException e) {
+			System.out.println("Feil ved omforming til tall");
+		 }
+
+
+
+
+*/

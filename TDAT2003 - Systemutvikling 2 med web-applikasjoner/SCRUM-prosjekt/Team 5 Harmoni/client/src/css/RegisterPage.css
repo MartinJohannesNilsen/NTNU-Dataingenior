@@ -1,0 +1,89 @@
+
+.wrapper{
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), 5px 5px 10px 0 rgb(0, 0, 0);
+    background-color: white;
+}
+
+#regTitle{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#regDropdown{
+    margin-bottom: 30px;
+}
+
+#regBtn{
+    margin: auto;
+    display: block;
+}
+
+
+#RegisterPageFormGroup{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#RegisterPageFormFieldsDiv{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+#RegisterPageFormFieldsDivForgot{
+    display: grid;
+    grid-template-columns: 3fr 12fr;
+}
+#RegisterPageFormFieldsDiv label{
+    text-align: right;
+}
+
+#RegisterPageFormGroup input{
+    width: 90%;
+    margin: auto auto auto 10px;
+}
+
+#RegisterPageFormGroup label{
+    margin: 20px;
+}
+
+#RegisterPageFormButtonDiv{
+    width: 60%;
+    margin: auto;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#RegisterPageFormButtonDiv button{
+    margin: 10px;
+}
+#RegisterPageFormButtonDivForgot{
+    padding-top: 10px;
+}
+#RegisterPageFormButtonDivForgot button{
+    margin: 10px;
+    width: 25%;
+}
+
+.registerContainer input{
+    margin-bottom: 20px;
+}
+
+@Media only screen and (max-width: 800px){
+    .wrapper{
+        width: 94%;
+    }
+
+    #RegisterPageFormGroup{
+        grid-template-columns: 1fr;
+    }
+    #RegisterPageFormFieldsDiv{
+        grid-template-columns: 5fr 10fr;
+    }
+
+    #RegisterPageFormButtonDiv{
+        width: 90%;
+        
+    
+    }
+}

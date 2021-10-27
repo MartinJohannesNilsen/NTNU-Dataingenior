@@ -1,0 +1,47 @@
+Skriver ned hva en trenger for å teste de ulike metodene:
+
+1. Vis alle nyhetssakene
+Gå inn på "http://localhost:8080/sak"
+Eller bruk POSTMAN, get og skriv inn linken.
+
+2. Vis en nyhetssak
+Gå inn på "http://localhost:8080/sak/1" for å se den med id=1
+eller bruk POSTMAN, get, og skriv inn linken
+
+3. Legg til en nyhetssak
+"http://localhost:8080/sak"
+Bruk POSTMAN, post, og skriv inn i body av typen JSON (application/json)
+Eksempel:
+{
+    "overskrift": "Norge er et bra fotballag",
+	"forfatter": "Martin Johannes Nilsen",
+    "innhold": "Norge mot Sverige, er det mulig å være så dårlige?",
+    "bilde": "https://www.fotball.no/imagevault/publishedmedia/qpk4fdvext4vfnqpmonb/td5da076.jpg",
+    "bildetekst": "Hei",
+    "kategori": "Sport",
+    "viktighet": 2
+}
+
+4. Slett en nyhetssak
+"http://localhost:8080/sak"
+Bruk POSTMAN, delete, og skriv inn i body av typen JSON (application/json)
+Eksempel:
+{
+	"id": 1
+}
+
+5. Endre en nyhetssak
+Bruk Postman, put, og skriv inn i body av typen JSON (application/json)
+Eksempel:
+{
+	"id": 8,
+    "overskrift": "Lea er best",
+    "innhold": "Hei",
+    "forfatter": "Lea",
+    "bilde": "https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-51.png",
+    "kategori": "Sport",
+    "viktighet": 1
+}
+
+
+

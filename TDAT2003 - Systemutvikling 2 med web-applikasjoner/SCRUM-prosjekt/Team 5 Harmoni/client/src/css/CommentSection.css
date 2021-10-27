@@ -1,0 +1,14 @@
+#commentsection {
+    margin-top: 100px;
+    width: 100%;
+}
+
+#commentSection a {
+    margin-bottom: 150px;
+}
+
+#eventViewCommentSection {
+    max-height: 300px;
+    overflow: auto;
+}
+
